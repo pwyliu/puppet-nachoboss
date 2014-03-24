@@ -12,29 +12,5 @@ which is like a totally way more awesome and better version of the same idea.
 ## Engage
 
 ```bash
-#!/bin/bash
-set -e
-
-# saucy
-PUPPET_URL="https://apt.puppetlabs.com"
-PUPPET_DEB="puppetlabs-release-saucy.deb"
-
-
-GITHUB_PROJECT="puppet-nachoboss"
-GITHUB_URL="https://github.com/pwyliu/$GITHUB_PROJECT.git"
-
-wget "$PUPPET_URL/$PUPPET_DEB"
-sudo dpkg -i ${PUPPET_DEB}
-rm ${PUPPET_DEB}
-
-sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y install git puppet
-
-git clone ${GITHUB_URL}
-cd ${GITHUB_PROJECT}
-./go.sh
-cd ..
-rm -rf ${GITHUB_PROJECT}
-exit
+wget -qO- https://gist.githubusercontent.com/pwyliu/9737709/raw/9b7cac51d0e22c66b0aa5eeb2295283aa6465a06/engage.sh | bash
 ```
