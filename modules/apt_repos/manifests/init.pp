@@ -15,7 +15,7 @@
 # Copyright 2014 Paul Liu, unless otherwise noted.
 #
 class apt_repos (
-  $dropbox_releasename = 'raring' # dropbox is always slow
+  $dropbox_releasename = 'saucy' # sometimes dropbox is slow
 ){
 
   class { 'apt':
