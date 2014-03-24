@@ -1,0 +1,30 @@
+# This file is managed by Puppet
+
+WORKDIR README
+====================================
+This is the working directory for Puppet module `<%= @module_name %>`.
+You should leave this directory alone unless you want to rerun installation.
+
+EXPLAIN
+====================================
+This module downloads and extracts a tarball to install a program. After
+install, the module cleans up the tarball and leaves behind this directory and
+some dotfiles. The dotfiles let the Puppet agent know that we are done our
+operations and to not rerun them.
+
+I WANT TO REINSTALL
+====================================
+To rerun installation, delete this working directory. This will cause the agent
+to rerun its manifest. MAKE SURE you have uninstalled the daemon in question
+or there will be problems when you try to reinstall something that is already
+installed. Duh.
+
+THIS IS A REAL DUMB WAY TO INSTALL THINGS
+====================================
+Agreed. Debs and rpms sure are nice. If you have the time, consider
+packaging up whatever this module does so that we don't have to do things like
+this.
+
+MODULE CONTACT
+====================================
+paul@kanetix.ca
