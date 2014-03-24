@@ -26,13 +26,8 @@ class workstation {
   }
 
   class { 'pycharm':
-    user => 'pliu',
+    user    => 'pliu',
     require => User['pliu']
   }
-
-#  class { 'nachoboss::snwl_netextender':
-#    link     => 'https://www.dropbox.com/s/5ehlvpbjq038es6/NetExtender.Linux.6.0.718.x86_64.tgz',
-#    filename => 'NetExtender.Linux.6.0.718.x86_64.tgz'
-#  }
 
 }
