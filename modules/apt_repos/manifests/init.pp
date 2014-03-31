@@ -1,6 +1,6 @@
 # == Class: apt_repos
 #
-# Repo control
+# Repo control. Installation of puppetlabs-apt module is handled by engage.sh
 #
 # === Examples
 #

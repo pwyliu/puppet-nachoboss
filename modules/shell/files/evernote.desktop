@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=Evernote Web
+Exec=google-chrome "--app=https://www.evernote.com/Home.action"
+Terminal=false
+Icon=/home/pliu/.evernote/evernote.png
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=www.evernote.com__Home.action

@@ -46,27 +46,6 @@ class packages {
     ensure => present,
   }
 
-  # python stuff
-  package { 'python-dev':
-    ensure => present,
-  }->
-  package { 'python-pip':
-    ensure => present,
-  }->
-  package { 'python-virtualenv':
-    ensure => present,
-  }->
-  package { 'python-setuptools':
-    ensure => present,
-  }->
-  package { 'virtualenvwrapper':
-    ensure   => latest,
-    provider => 'pip'
-  }->
-  package { 'python-gpgme':
-    ensure => present,
-  }
-
   # apps
   package { 'keepass2':
     ensure => present,
@@ -74,6 +53,9 @@ class packages {
   package { 'google-chrome-stable':
     ensure => present,
   }
+  package { 'python-gpgme':
+    ensure => present,
+  }->
   package { 'dropbox':
     ensure => present,
   }

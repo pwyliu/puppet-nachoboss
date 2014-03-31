@@ -17,17 +17,10 @@
 class workstation {
   require apt_repos
   require packages
-
-  user { 'pliu':
-    ensure     => present,
-    home       => '/home/pliu',
-    shell      => '/bin/bash',
-    managehome => false
-  }
+  require shell
 
   class { 'pycharm':
     user    => 'pliu',
-    require => User['pliu']
   }
 
 }
