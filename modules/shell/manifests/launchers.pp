@@ -32,10 +32,10 @@ class shell::launchers inherits shell {
 
   # Desktop files
   file { "/home/${user}/.local/share/applications/evernote.desktop":
-    ensure => file,
-    owner  => $user,
-    group  => $user,
-    mode   => '0644',
-    source => 'puppet:///modules/shell/evernote.desktop'
+    ensure  => file,
+    owner   => $user,
+    group   => $user,
+    mode    => '0644',
+    content => template('shell/evernote.desktop.erb')
   }
 }
