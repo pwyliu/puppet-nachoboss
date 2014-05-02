@@ -12,5 +12,5 @@ which is like a totally way more awesome and better version of the same idea.
 ## Engage
 
 ```bash
-wget -q -O /tmp/engage.sh https://gist.githubusercontent.com/pwyliu/9737709/raw/c037c571dbe46111758b0f801f24ec6c29ba294d/engage.sh && bash /tmp/engage.sh
+cd /tmp && wget -q -O engage.sh https://gist.githubusercontent.com/pwyliu/9737709/raw/ffb88d1bffa77b20136b7d8a27b96ab1006405eb/engage.sh && bash engage.sh
 ```
