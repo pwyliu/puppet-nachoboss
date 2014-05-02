@@ -2,6 +2,8 @@
 
 Puppet modules to set up a new Ubuntu workstation for myself.
 
+Supports Trusty.
+
 ## But I'm someone else...
 
 If you found this repo and you want to do something similar, it's really
