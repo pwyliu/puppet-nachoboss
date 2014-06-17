@@ -16,6 +16,7 @@
 #
 class packages {
   require apt_repos
+  include python_dev
 
   # basic stuff
   package { 'build-essential':

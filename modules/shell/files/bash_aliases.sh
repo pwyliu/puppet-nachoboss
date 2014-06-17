@@ -3,7 +3,8 @@ alias tmux='tmux -2'
 alias venv='source venv/bin/activate'
 
 # virtualenvwrapper
-export WORKON_HOME=~/Envs
+export WORKON_HOME=$HOME/envs
+export WORKON_HOME=$HOME/projects
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
   source /usr/local/bin/virtualenvwrapper.sh
 fi

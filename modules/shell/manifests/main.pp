@@ -21,7 +21,13 @@ class shell::main inherits shell {
     shell      => '/bin/bash',
     managehome => false
   }->
-  file { "/home/${user}/Envs":
+  file { "/home/${user}/envs":
+    ensure => directory,
+    owner  => $user,
+    group  => $user,
+    mode   => '0755'
+  }->
+  file { "/home/${user}/projects":
     ensure => directory,
     owner  => $user,
     group  => $user,
