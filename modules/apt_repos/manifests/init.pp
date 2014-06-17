@@ -68,4 +68,15 @@ class apt_repos (
     include_src       => false,
   }
 
+  apt::key { 'virtualbox_key':
+    key        => '98AB5139',
+    key_source => 'http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc',
+  }->
+  apt::source { 'virtualbox':
+    location          => 'http://download.virtualbox.org/virtualbox/debian',
+    release           => $::lsbdistcodename,
+    repos             => 'contrib',
+    include_src       => false,
+  }
+
 }
