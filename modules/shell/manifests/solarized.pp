@@ -23,7 +23,7 @@ class shell::solarized inherits shell {
   }->
   exec { 'solarized_exec':
     cwd     => "/home/${user}/.solarized",
-    command => "bash solarized.sh dark && touch .executed",
+    command => "./solarize.sh dark && touch .executed",
     creates => "/home/${user}/.solarized/.executed",
     user    => $user
   }
