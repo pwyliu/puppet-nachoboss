@@ -1,6 +1,6 @@
 # == Class: shell::solarized
 #
-# Solarize ubuntu shell
+# Installs solarize script
 #
 # === Examples
 #
@@ -19,12 +19,6 @@ class shell::solarized inherits shell {
     cwd     => "/home/${user}",
     command => "git clone https://github.com/gmodarelli/solarize.git /home/${user}/.solarized",
     creates => "/home/${user}/.solarized/solarize.sh",
-    user    => $user
-  }->
-  exec { 'solarized_exec':
-    cwd     => "/home/${user}/.solarized",
-    command => "./solarize.sh dark && touch .executed",
-    creates => "/home/${user}/.solarized/.executed",
     user    => $user
   }
 }
