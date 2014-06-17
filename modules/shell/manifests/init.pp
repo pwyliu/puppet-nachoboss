@@ -23,5 +23,6 @@ class shell (
   class { '::shell::main': } ->
   class { '::shell::launchers': } ->
   class { '::shell::rbenv': } ->
+  class { '::shell::solarized': } ->
   anchor { 'shell::end': }
 }
