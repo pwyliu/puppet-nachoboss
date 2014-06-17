@@ -17,7 +17,7 @@
 class workstation {
   require apt_repos
   require packages
-  include shell
+  require shell
 
   class { 'pycharm':
     user    => 'pliu',
