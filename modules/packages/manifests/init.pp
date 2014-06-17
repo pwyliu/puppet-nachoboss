@@ -28,6 +28,9 @@ class packages {
   package { 'vim':
     ensure => present,
   }
+  package { 'vim-gnome':
+    ensure => present,
+  }
   package { 'tmux':
     ensure => present,
   }

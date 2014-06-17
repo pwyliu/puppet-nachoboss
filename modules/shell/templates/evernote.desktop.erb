@@ -1,10 +1,9 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
-Encoding=UTF-8
 Version=1.0
-Name=Evernote Web
-Exec=google-chrome "--app=https://www.evernote.com/Home.action"
 Terminal=false
-Icon=/home/<%= @user %>/.launcher_icons/evernote.png
 Type=Application
-Categories=Network;WebBrowser;
-StartupWMClass=www.evernote.com__Home.action
+Name=Evernote Web
+Exec=/opt/google/chrome/google-chrome "--app=https://www.evernote.com/Login.action?targetUrl=%2FHome.action"
+Icon=/home/<%= @user %>/.launcher_icons/evernote.png
+StartupWMClass=www.evernote.com__Login.action

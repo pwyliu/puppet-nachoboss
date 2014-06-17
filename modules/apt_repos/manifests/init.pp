@@ -21,7 +21,7 @@ class apt_repos (
   class { 'apt':
     always_apt_update    => true,
     purge_sources_list   => false,
-    purge_sources_list_d => false,
+    purge_sources_list_d => true,
   }
 
   apt::source { 'puppetlabs':
