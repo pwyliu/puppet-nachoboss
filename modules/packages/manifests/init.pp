@@ -63,4 +63,8 @@ class packages {
   package { 'dropbox':
     ensure => present,
   }
+  package { 'hipchat':
+    ensure => present,
+  }
+
 }

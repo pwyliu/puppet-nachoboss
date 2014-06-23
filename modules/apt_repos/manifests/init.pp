@@ -79,4 +79,15 @@ class apt_repos (
     include_src       => false,
   }
 
+  apt::key { 'hipchat_key':
+    key        => '729B5780',
+    key_source => 'https://www.hipchat.com/keys/hipchat-linux.key',
+  }->
+  apt::source { 'hipchat':
+    location          => 'http://downloads.hipchat.com/linux/apt',
+    release           => 'stable',
+    repos             => 'main',
+    include_src       => false,
+  }
+
 }
